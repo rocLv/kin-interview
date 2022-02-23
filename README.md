@@ -9,9 +9,13 @@
 
 ```shell
 # cd [project root]
+# bundle install
+# rails db:create db:migrate
 # rails server
 
 ```
+
+The app should work fine.
 
 ## Test
 
