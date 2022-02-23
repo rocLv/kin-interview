@@ -1,24 +1,37 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Install
 
-Things you may want to cover:
+* ruby version: 2.7.4
+* rails version: 7.0.2.2
 
-* Ruby version
+## Run
 
-* System dependencies
+```shell
+# cd [project root]
+# rails server
 
-* Configuration
+```
 
-* Database creation
+## Test
 
-* Database initialization
+```shell
+# rails test
+```
 
-* How to run the test suite
+## Curl
 
-* Services (job queues, cache servers, search engines, etc.)
+#### Test `/register`
 
-* Deployment instructions
+```shell
+# curl --location -g --request POST 'localhost:3000/register?user[username]=user2' \
+--header 'Content-Type: application/json'
 
-* ...
+```
+#### Test `/suggest`
+
+```shell
+# curl --location --request POST 'localhost:3000/suggest?first_name=user3&last_name=user4' --header 'Content-Type: application/json'
+```
+
+
