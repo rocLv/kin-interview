@@ -26,7 +26,6 @@ jobs:
         env:
           RAILS_ENV: test
         run: |
-          cp config/database.yml config/database.yml
           rake db:create db:migrate
       - name: Run tests
         run: rails test
